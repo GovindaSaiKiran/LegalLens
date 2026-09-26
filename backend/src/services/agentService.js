@@ -181,39 +181,50 @@ ${routeDirectory}`;
       return response;
     } catch (err) {
       console.error('[AgentService] Groq execution error:', err.message);
-      
+
+      const langSwitchReplies = {
+        te: "భాష తెలుగులోకి మార్చబడింది! నేను ఇప్పుడు తెలుగులో మీ పత్రాలను విశ్లేషించడానికి మరియు సహాయం చేయడానికి సిద్ధంగా ఉన్నాను.",
+        hi: "भाषा को हिंदी में बदल दिया गया है! अब मैं हिंदी और आपके आदेशों के अनुसार आपकी सहायता करने के लिए तैयार हूं।",
+        ta: "மொழி தமிழுக்கு மாற்றப்பட்டது! இப்போது நான் தமிழில் உங்களுக்கு உதவ தயாராக உள்ளேன்.",
+        kn: "ಭಾಷೆಯನ್ನು ಕನ್ನಡಕ್ಕೆ ಬದಲಾಯಿಸಲಾಗಿದೆ! ಈಗ ನಾನು ಕನ್ನಡದಲ್ಲಿ ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಸಿದ್ಧನಾಗಿದ್ದೇನೆ.",
+        ml: "ഭാഷ മലയാളത്തിലേക്ക് മാറ്റി! ഇപ്പോൾ ഞാൻ മലയാളത്തിൽ നിങ്ങളെ സഹായിക്കാൻ തയ്യാറാണ്.",
+        mr: "भाषा मराठीत बदलली आहे! आता मी तुम्हाला मराठीत मदत करण्यास सज्ज आहे.",
+        bn: "ভাষা বাংলায় পরিবর্তন করা হয়েছে! এখন আমি আপনাকে বাংলায় সাহায্য করতে প্রস্তুত।",
+        en: "Language switched to English! I am ready to assist you across all LegalLens features."
+      };
+
       const fallbacks = {
         te: {
-          reply: "నేను LegalLens లో మీ కోసం ఏదైనా పని చేయడానికి సిద్ధంగా ఉన్నాను. నిబంధనలను విశ్లేషించడం, చట్టపరమైన ప్రశ్న అడగడం లేదా భాషను మార్చడం వంటివి అడగండి!",
+          reply: isLangSwitchIntent ? langSwitchReplies[detectedTargetLang || 'te'] : "నేను LegalLens లో మీ కోసం ఏదైనా పని చేయడానికి సిద్ధంగా ఉన్నాను. నిబంధనలను విశ్లేషించడం, చట్టపరమైన ప్రశ్న అడగడం లేదా భాషను మార్చడం వంటివి అడగండి!",
           prompts: ["డ్యాష్‌బోర్డ్ తెరవండి", "SaaS డెమో నిబంధనలను విశ్లేషించండి", "ఇంటి యజమాని డిపాజిట్ కట్ చేయవచ్చా?"]
         },
         hi: {
-          reply: "मैं LegalLens पर आपके लिए कोई भी कार्य करने के लिए तैयार हूं। नियमों का विश्लेषण, कानूनी प्रश्न या भाषा बदलने के लिए कहें!",
+          reply: isLangSwitchIntent ? langSwitchReplies[detectedTargetLang || 'hi'] : "मैं LegalLens पर आपके लिए कोई भी कार्य करने के लिए तैयार हूं। नियमों का विश्लेषण, कानूनी प्रश्न या भाषा बदलने के लिए कहें!",
           prompts: ["डैशबोर्ड खोलें", "डेमो SaaS नियमों का विश्लेषण करें", "क्या मकान मालिक सिक्योरिटी डिपॉजिट काट सकता है?"]
         },
         ta: {
-          reply: "LegalLens இல் உங்களுக்காக எந்தப் பணியையும் செய்ய நான் தயாராக உள்ளேன். விதிமுறைகளை பகுப்பாய்வு செய்ய அல்லது சட்டக் கேள்விகளைக் கேட்கவும்!",
+          reply: isLangSwitchIntent ? langSwitchReplies[detectedTargetLang || 'ta'] : "LegalLens இல் உங்களுக்காக எந்தப் பணியையும் செய்ய நான் தயாராக உள்ளேன். விதிமுறைகளை பகுப்பாய்வு செய்ய அல்லது சட்டக் கேள்விகளைக் கேட்கவும்!",
           prompts: ["டாஷ்போர்டு திறக்கவும்", "டெமோ SaaS விதிமுறைகளை பகுப்பாய்வு செய்", "வாடகை முன்பணத்தை உரிமையாளர் பிடிக்கலாமா?"]
         },
         kn: {
-          reply: "LegalLens ನಲ್ಲಿ ನಿಮಗಾಗಿ ಯಾವುದೇ ಕಾರ್ಯವನ್ನು ನಿರ್ವಹಿಸಲು ನಾನು ಸಿದ್ಧನಾಗಿದ್ದೇನೆ. ನಿಯಮಗಳ ವಿಶ್ಲೇಷಣೆ ಅಥವಾ ಕಾನೂನು ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಿ!",
+          reply: isLangSwitchIntent ? langSwitchReplies[detectedTargetLang || 'kn'] : "LegalLens ನಲ್ಲಿ ನಿಮಗಾಗಿ ಯಾವುದೇ ಕಾರ್ಯವನ್ನು ನಿರ್ವಹಿಸಲು ನಾನು ಸಿದ್ಧನಾಗಿದ್ದೇನೆ. ನಿಯಮಗಳ ವಿಶ್ಲೇಷಣೆ ಅಥವಾ ಕಾನೂನು ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಿ!",
           prompts: ["ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ತೆರೆಯಿರಿ", "ಡೆಮೊ ನಿಯಮಗಳನ್ನು ವಿಶ್ಲೇಷಿಸಿ", "ಮನೆಮಾಲೀಕರು ಠೇವಣಿ ಕಡಿತಗೊಳಿಸಬಹುದೇ?"]
         },
         ml: {
-          reply: "LegalLens-ൽ നിങ്ങൾക്കായി ഏത് ചുമതലയും നിർവഹിക്കാൻ ഞാൻ തയ്യാറാണ്. നിബന്ധനകൾ വിശകലനം ചെയ്യാനോ നിയമപരമായ ചോദ്യങ്ങൾ ചോദിക്കാനോ എന്നോട് പറയൂ!",
+          reply: isLangSwitchIntent ? langSwitchReplies[detectedTargetLang || 'ml'] : "LegalLens-ൽ നിങ്ങൾക്കായി ഏത് ചുമതലയും നിർവഹിക്കാൻ ഞാൻ തയ്യാറാണ്. നിബന്ധനകൾ വിശകലനം ചെയ്യാനോ നിയമപരമായ ചോദ്യങ്ങൾ ചോദിക്കാനോ എന്നോട് പറയൂ!",
           prompts: ["ഡാഷ്‌ബോർഡ് തുറക്കുക", "ഡെമോ SaaS നിബന്ധനകൾ വിശകലനം ചെയ്യുക", "സെക്യൂരിറ്റി ഡെപ്പോസിറ്റ് ഉടമയ്ക്ക് പിടിക്കാമോ?"]
         },
         mr: {
-          reply: "मी LegalLens वर आपल्यासाठी कोणतेही कार्य करण्यासाठी सज्ज आहे. अटींचे विश्लेषण, कायदेशीर प्रश्न किंवा भाषा बदलण्यासाठी सांगा!",
+          reply: isLangSwitchIntent ? langSwitchReplies[detectedTargetLang || 'mr'] : "मी LegalLens वर आपल्यासाठी कोणतेही कार्य करण्यासाठी सज्ज आहे. अटींचे विश्लेषण, कायदेशीर प्रश्न किंवा भाषा बदलण्यासाठी सांगा!",
           prompts: ["डॅशबोर्ड उघडा", "डेमो SaaS अटींचे विश्लेषण करा", "घरमालक डिपॉझिट कापू शकतो का?"]
         },
         bn: {
-          reply: "আমি LegalLens-এ আপনার জন্য যেকোনো কাজ সম্পাদন করতে প্রস্তুত। শর্তাবলী বিশ্লেষণ বা আইনি প্রশ্ন জিজ্ঞাসা করুন!",
-          prompts: ["ড্যাশবোর্ড খুলুন", "ডেমো SaaS শর্তাবলী বিশ্লেষণ করুন", "বাড়িওয়ালা কি সিকিউরিটি ডিপোজিট কাটতে পারেন?"]
+          reply: isLangSwitchIntent ? langSwitchReplies[detectedTargetLang || 'bn'] : "আমি LegalLens-এ আপনার জন্য যেকোনো কাজ সম্পাদন করতে প্রস্তুত। শর্তাবলী विश्लेषण বা আইনি প্রশ্ন জিজ্ঞাসা করুন!",
+          prompts: ["ড্যাশবোর্ড খুলুন", "ডেমো SaaS শর্তাবলী विश्लेषण করুন", "বাড়িওয়ালা কি সিকিউরিটি ডিপোজিট কাটতে পারেন?"]
         },
         en: {
-          reply: "I am ready to perform any task on LegalLens for you. Tell me what you'd like to do, such as analyzing an agreement, asking a legal question, or switching the language!",
-          prompts: ["Switch language to Telugu", "Analyze demo SaaS terms", "Can my landlord deduct my deposit?"]
+          reply: isLangSwitchIntent ? langSwitchReplies[detectedTargetLang || 'en'] : "I am ready to perform any task on LegalLens for you. Tell me what you'd like to do, such as analyzing an agreement, asking a legal question, or switching the language!",
+          prompts: ["Switch language to Hindi", "Switch language to Telugu", "Analyze demo SaaS terms", "Can my landlord deduct my deposit?"]
         }
       };
 
@@ -234,14 +245,31 @@ ${routeDirectory}`;
           label: `Switch to ${langNames[detectedTargetLang]}`,
           data: { languageCode: detectedTargetLang, languageName: langNames[detectedTargetLang] }
         };
+      } else if (/https?:\/\/[^\s]+/i.test(message)) {
+        const foundUrl = message.match(/https?:\/\/[^\s]+/i)[0];
+        fallbackAction = {
+          type: "analyze_terms",
+          targetRoute: "/terms",
+          label: "Analyze URL Terms",
+          data: { mode: "url", url: foundUrl }
+        };
       } else if (/dashboard|డ్యాష్‌బోర్డ్|डैशबोर्ड|chupinchu|kholo|dakhva/i.test(lowerMsg)) {
         fallbackAction = { type: "navigate", targetRoute: "/dashboard", label: "Open Dashboard", data: {} };
-      } else if (/glossary|నిఘంటువు|शब्दावली/i.test(lowerMsg)) {
-        fallbackAction = { type: "navigate", targetRoute: "/glossary", label: "Open Glossary", data: {} };
+      } else if (/glossary|నిఘంటువు|शब्दावली|indemnity|force majeure|liquidated damages/i.test(lowerMsg)) {
+        fallbackAction = { type: "open_glossary", targetRoute: "/glossary", label: "Open Glossary", data: { searchTerm: "indemnity" } };
+      } else if (/compare|పోలిక|तुलना/i.test(lowerMsg)) {
+        fallbackAction = { type: "navigate", targetRoute: "/compare", label: "Compare Documents", data: {} };
       } else if (/upload|అప్‌లోడ్|अपलोड/i.test(lowerMsg)) {
         fallbackAction = { type: "navigate", targetRoute: "/upload", label: "Open Upload", data: {} };
-      } else if (/saas|terms|నిబంధన/i.test(lowerMsg)) {
+      } else if (/saas|terms|నిబంధన|शर्त/i.test(lowerMsg)) {
         fallbackAction = { type: "analyze_terms", targetRoute: "/terms", label: "Analyze SaaS Terms", data: { mode: "demo", demoId: "saas-terms" } };
+      } else if (/landlord|deposit|rent|consumer|refund|law|धारा|చట్టం|నోటీస్/i.test(lowerMsg)) {
+        fallbackAction = {
+          type: "ask_assistant",
+          targetRoute: "/legal-assistant",
+          label: "Ask Legal Assistant",
+          data: { question: message, category: "consumer" }
+        };
       }
 
       return {

@@ -67,9 +67,9 @@ exports.analyzeUrl = async (req, res, next) => {
 exports.analyzeText = async (req, res, next) => {
   try {
     const { text, title } = req.body;
-    if (!text || typeof text !== 'string' || text.trim().length < 50) {
+    if (!text || typeof text !== 'string' || text.trim().length < 20) {
       return res.status(400).json({
-        error: 'Please provide at least 50 characters of legal or terms text to analyze.',
+        error: 'Please provide at least 20 characters of legal or terms text to analyze.',
         code: 'VALIDATION_ERROR'
       });
     }

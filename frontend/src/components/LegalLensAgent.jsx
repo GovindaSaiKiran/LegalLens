@@ -356,14 +356,73 @@ export default function LegalLensAgent() {
         executeAgentAction(data.action, text, data.reply);
       }
     } catch (err) {
-      console.error('[LegalLensAgent] Error calling agent API:', err);
+      console.warn('[LegalLensAgent] Network or backend error, utilizing client-side intent execution:', err.message);
+
+      const lower = text.toLowerCase();
+      let detectedLang = null;
+      if (/telugu|తెలుగు|telugulo/i.test(lower)) detectedLang = 'te';
+      else if (/hindi|हिन्दी|हिंदी|hindime|hindi me/i.test(lower)) detectedLang = 'hi';
+      else if (/tamil|தமிழ்|tamilil/i.test(lower)) detectedLang = 'ta';
+      else if (/kannada|ಕನ್ನಡ|kannadadalli/i.test(lower)) detectedLang = 'kn';
+      else if (/malayalam|മലയാളം|malayalamil/i.test(lower)) detectedLang = 'ml';
+      else if (/marathi|मराठी|marathit/i.test(lower)) detectedLang = 'mr';
+      else if (/bengali|বাংলা|bangla/i.test(lower)) detectedLang = 'bn';
+      else if (/english|angrezi/i.test(lower)) detectedLang = 'en';
+
+      let fallbackReply = COPILOT_GREETINGS[langCode] || COPILOT_GREETINGS.en;
+      let fallbackAction = null;
+
+      if (detectedLang) {
+        selectLanguage(detectedLang);
+        fallbackReply = LANGUAGE_CHANGED_NOTICES[detectedLang] || LANGUAGE_CHANGED_NOTICES.en;
+        fallbackAction = {
+          type: 'switch_language',
+          data: { languageCode: detectedLang },
+          label: `Switched to ${detectedLang.toUpperCase()}`
+        };
+      } else if (/https?:\/\/[^\s]+/i.test(text)) {
+        const foundUrl = text.match(/https?:\/\/[^\s]+/i)[0];
+        fallbackReply = `Starting Terms & Conditions analysis for ${foundUrl}...`;
+        fallbackAction = {
+          type: 'analyze_terms',
+          targetRoute: '/terms',
+          data: { mode: 'url', url: foundUrl },
+          label: 'Analyze Terms URL'
+        };
+        executeAgentAction(fallbackAction, text, fallbackReply);
+      } else if (/dashboard|డ్యాష్‌బోర్డ్|डैशबोर्ड|chupinchu|kholo/i.test(lower)) {
+        fallbackReply = "Opening your personal LegalLens dashboard...";
+        fallbackAction = { type: 'navigate', targetRoute: '/dashboard', label: 'Go to Dashboard' };
+        executeAgentAction(fallbackAction, text, fallbackReply);
+      } else if (/glossary|నిఘంటువు|शब्दावली|indemnity|force majeure/i.test(lower)) {
+        fallbackReply = "Opening the Legal Glossary for plain-language definitions...";
+        fallbackAction = { type: 'open_glossary', data: { searchTerm: 'indemnity' }, label: 'Open Glossary' };
+        executeAgentAction(fallbackAction, text, fallbackReply);
+      } else if (/upload|అప్‌లోడ్|अपलोड/i.test(lower)) {
+        fallbackReply = "Navigating to Document Upload for contract analysis & OCR...";
+        fallbackAction = { type: 'navigate', targetRoute: '/upload', label: 'Go to Upload' };
+        executeAgentAction(fallbackAction, text, fallbackReply);
+      } else if (/compare|పోలిక|तुलना/i.test(lower)) {
+        fallbackReply = "Opening Document Comparison to review version diffs...";
+        fallbackAction = { type: 'navigate', targetRoute: '/compare', label: 'Go to Comparison' };
+        executeAgentAction(fallbackAction, text, fallbackReply);
+      } else if (/terms|saas|నిబంధన|शर्त/i.test(lower)) {
+        fallbackReply = "Loading the Terms & Conditions Analyzer...";
+        fallbackAction = { type: 'analyze_terms', targetRoute: '/terms', data: { mode: 'demo', demoId: 'saas-terms' }, label: 'Analyze Terms' };
+        executeAgentAction(fallbackAction, text, fallbackReply);
+      } else if (/deposit|rent|landlord|consumer|refund|notice|धारा|చట్టం/i.test(lower)) {
+        fallbackReply = "Under Indian statutes (e.g. Model Tenancy Act, Consumer Protection Act 2019), rights are legally protected. Opening Legal Assistant with grounded statutory references...";
+        fallbackAction = { type: 'ask_assistant', targetRoute: '/legal-assistant', data: { question: text, category: 'consumer' }, label: 'Ask Legal Assistant' };
+        executeAgentAction(fallbackAction, text, fallbackReply);
+      }
+
       setMessages(prev => [
         ...prev,
         {
-          id: 'bot-err-' + Date.now(),
+          id: 'bot-fallback-' + Date.now(),
           role: 'assistant',
-          content: COPILOT_GREETINGS[langCode] || COPILOT_GREETINGS.en,
-          action: null,
+          content: fallbackReply,
+          action: fallbackAction,
           suggestedPrompts: sectionPrompts
         }
       ]);

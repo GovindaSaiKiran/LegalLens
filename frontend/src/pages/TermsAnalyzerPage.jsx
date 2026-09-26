@@ -79,8 +79,8 @@ export default function TermsAnalyzerPage() {
         }
         res = await analyzeTermsUrl(urlInput.trim());
       } else {
-        if (!textInput || textInput.trim().length < 50) {
-          throw new Error('Please paste at least 50 characters of legal terms.');
+        if (!textInput || textInput.trim().length < 20) {
+          throw new Error('Please paste at least 20 characters of legal terms.');
         }
         res = await analyzeTermsText(textInput.trim(), titleInput.trim());
       }

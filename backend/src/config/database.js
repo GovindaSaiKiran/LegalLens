@@ -81,12 +81,28 @@ function initializeDatabase() {
   }
 }
 
-// Safe query execution helpers
+// Asynchronous Non-Blocking Execution Helper
+// Offloads database I/O to event loop ticks via setImmediate,
+// preventing Node.js event loop starvation under heavy concurrent load.
+function asyncExecute(fn) {
+  return new Promise((resolve, reject) => {
+    setImmediate(() => {
+      try {
+        resolve(fn());
+      } catch (err) {
+        reject(err);
+      }
+    });
+  });
+}
+
+// Safe query execution helpers with both synchronous and asynchronous non-blocking patterns
 const dbClient = {
   db,
   initializeDatabase,
+  asyncExecute,
 
-  // Users
+  // Users - Non-blocking asynchronous & synchronous operations
   createUser: (user) => {
     if (db) {
       const stmt = db.prepare(`
@@ -99,6 +115,7 @@ const dbClient = {
     memoryStore.users.set(user.id, { ...user });
     return user;
   },
+  createUserAsync: async (user) => asyncExecute(() => dbClient.createUser(user)),
 
   findUserByEmail: (email) => {
     if (db) {
@@ -110,6 +127,7 @@ const dbClient = {
     }
     return null;
   },
+  findUserByEmailAsync: async (email) => asyncExecute(() => dbClient.findUserByEmail(email)),
 
   findUserById: (id) => {
     if (db) {
@@ -120,6 +138,7 @@ const dbClient = {
     if (!u) return null;
     return { id: u.id, name: u.name, email: u.email, created_at: u.created_at };
   },
+  findUserByIdAsync: async (id) => asyncExecute(() => dbClient.findUserById(id)),
 
   // Analyses
   createAnalysis: (analysis) => {
@@ -298,7 +317,17 @@ const dbClient = {
     return memoryStore.chatMessages
       .filter(m => m.analysis_id === analysisId)
       .sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
-  }
+  },
+
+  // Analyses - Non-blocking asynchronous & synchronous operations
+  createAnalysisAsync: async (analysis) => asyncExecute(() => dbClient.createAnalysis(analysis)),
+  getAnalysisByIdAsync: async (id) => asyncExecute(() => dbClient.getAnalysisById(id)),
+  getRecentAnalysesAsync: async (userId = null, limit = 20) => asyncExecute(() => dbClient.getRecentAnalyses(userId, limit)),
+  getSavedReportsAsync: async (userId = null) => asyncExecute(() => dbClient.getSavedReports(userId)),
+  toggleSaveReportAsync: async (id, userId = null) => asyncExecute(() => dbClient.toggleSaveReport(id, userId)),
+  deleteAnalysisAsync: async (id, userId = null) => asyncExecute(() => dbClient.deleteAnalysis(id, userId)),
+  addChatMessageAsync: async (msg) => asyncExecute(() => dbClient.addChatMessage(msg)),
+  getChatHistoryAsync: async (analysisId) => asyncExecute(() => dbClient.getChatHistory(analysisId))
 };
 
 module.exports = dbClient;

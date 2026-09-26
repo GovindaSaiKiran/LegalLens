@@ -389,16 +389,47 @@ LegalLens features built-in translations for 8 Indian regional languages. Users 
 
 ---
 
-## ⚖️ Legal Disclaimers & Ethical Guidelines
+## 🧪 Automated Testing & Quality Assurance
 
-### 1. General Legal Awareness, Not Legal Advice
-> **LegalLens provides automated document breakdowns, informational plain-language summaries, and verified statutory awareness. It does not provide legal representation, formal advocacy, or binding legal advice.**
+LegalLens maintains a comprehensive, production-grade automated testing suite spanning both backend services and frontend user interfaces:
 
-### 2. Jurisdiction Constraints
-Statutory references and legal knowledge bases are grounded primarily in **Indian Federal & State Law** (Consumer Protection, Model Tenancy, DPDP Act 2023, Contract Act 1872). Laws and judicial precedents vary by jurisdiction.
+```bash
+# Run all backend unit, integration, and security tests (Jest)
+npm run test
 
-### 3. Qualified Lawyer Consultation
-For contentious disputes, large transactions, or formal litigation, users should always consult a licensed advocate registered with the appropriate **State Bar Council**.
+# Run all frontend component and legal simplifier tests (Vitest)
+npm run test --prefix frontend
+```
+
+### Test Coverage Highlights:
+* **Terms Analysis Engine (`backend/tests/terms.test.js`)**: Validates clause extraction for recurring billing, arbitration, telemetry/privacy, and liability disclaimers, with edge-case checks for invalid document lengths.
+* **Statutory RAG Pipeline (`backend/tests/rag.test.js`)**: Validates keyword scoring, relevance ranking, statutory section matching, and stop-word filtering across Indian statutory provisions.
+* **Prompt Injection Defense (`backend/tests/terms.test.js`)**: Validates that system prompt overrides, DAN jailbreaks, instruction hijacking, and LLM control tokens are sanitized before prompt interpolation.
+* **Database & Concurrency (`backend/tests/database.test.js`)**: Validates asynchronous non-blocking record creation, queries, report saving, and in-memory test isolation.
+* **Security & Headers (`backend/tests/security.test.js`)**: Verifies Helmet protection headers (`nosniff`, `frameguard`, `dnsPrefetch`), route authentication guards, and 404 handlers.
+* **Plain-English ELI5 Simplifier (`frontend/src/App.test.jsx`)**: Validates translation of complex legal jargon into 5th-grade English and structured breakdown generation.
+
+---
+
+## 🛡️ Security, Scalability & Concurrency Architecture
+
+### 1. Multi-Layer Prompt Injection Sanitization
+To prevent prompt injection, model jailbreaks, and delimiter hijacking from untrusted documents:
+* **Token Stripping**: Automatically removes LLM control tokens (`<|im_start|>`, `[INST]`, `<<SYS>>`).
+* **Jailbreak Filtering**: Neutralizes adversarial directives (`Ignore previous instructions`, `DAN mode`, `developer mode`).
+* **Delimited Data Boundary**: Untrusted user documents are isolated inside `<untrusted_document_content>` tags with strict system prompt constraints forbidding instruction execution from within the document block.
+
+### 2. Asynchronous Non-Blocking Database Architecture
+To eliminate event loop blocking under heavy concurrent traffic:
+* Database operations are executed using an **asynchronous event-loop yielding queue (`asyncExecute`)** powered by `setImmediate`.
+* Long-running queries yield control back to the Node.js event loop, preventing event loop starvation.
+* Includes both synchronous and asynchronous Promise-based APIs (`createUserAsync`, `createAnalysisAsync`, `findUserByEmailAsync`).
+
+### 3. Production HTTP Hardening
+* **Helmet Security Headers**: X-Content-Type-Options (`nosniff`), X-Frame-Options (`SAMEORIGIN`), X-DNS-Prefetch-Control.
+* **Rate Limiting**: Protects AI endpoints against abuse with `express-rate-limit`.
+* **Gzip/Brotli Compression**: `compression` middleware reduces payload sizes for rapid responsiveness.
+* **In-Memory Query Caching**: Powered by `apicache` for high-throughput public endpoints.
 
 ---
 

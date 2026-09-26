@@ -4,13 +4,7 @@ const getBaseURL = () => {
   if (import.meta.env.VITE_API_BASE_URL) {
     return import.meta.env.VITE_API_BASE_URL;
   }
-  if (typeof window !== 'undefined') {
-    const host = window.location.hostname;
-    if (host && host !== 'localhost' && host !== '127.0.0.1') {
-      return 'https://legallens-os2k.onrender.com/api';
-    }
-  }
-  return '/api';
+  return 'https://legallens-os2k.onrender.com/api';
 };
 
 const api = axios.create({

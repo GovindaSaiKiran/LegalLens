@@ -5,6 +5,8 @@
 > **"Understand Before You Agree."**  
 > *Transforming dense Terms & Conditions, complex contracts, and statutory legal queries into plain-English, actionable clarity.*
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-legallens--1--6gc5.onrender.com-success?style=for-the-badge&logo=render)](https://legallens-1-6gc5.onrender.com)
+
 [![Node.js](https://img.shields.io/badge/Node.js-v18%2B%20%7C%20v24-339933?style=flat&logo=node.js)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat&logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.1-646CFF?style=flat&logo=vite)](https://vitejs.dev/)
@@ -12,6 +14,10 @@
 [![SQLite](https://img.shields.io/badge/SQLite-native%20node%3Asqlite-003B57?style=flat&logo=sqlite)](https://sqlite.org/)
 [![Firebase](https://img.shields.io/badge/Firebase-v12%20Auth-FFCA28?style=flat&logo=firebase)](https://firebase.google.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+### 🌐 Live Demo & Deployment
+🔗 **Live Application URL:** [https://legallens-1-6gc5.onrender.com](https://legallens-1-6gc5.onrender.com)  
+⚡ **Backend API Service:** [https://legallens-os2k.onrender.com/api/health](https://legallens-os2k.onrender.com/api/health)
 
 </div>
 

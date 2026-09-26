@@ -1,0 +1,33 @@
+{
+  "jurisdiction": "india",
+  "category": "rental",
+  "act_title": "Transfer of Property Act, 1882 (Act No. 4 of 1882) - Leases of Immovable Property",
+  "authority": "Parliament of India / Ministry of Law and Justice",
+  "enacted_year": 1882,
+  "sources": [
+    {
+      "section": "Section 105",
+      "title": "Lease Defined",
+      "summary": "A lease of immovable property is a transfer of a right to enjoy such property, made for a certain time, express or implied, or in perpetuity, in consideration of a price paid or promised, or of money, a share of crops, service or any other thing of value.",
+      "keywords": ["lease definition", "immovable property lease", "landlord tenant relationship", "consideration for lease"]
+    },
+    {
+      "section": "Section 106",
+      "title": "Duration of Certain Leases in Absence of Written Contract or Local Usage",
+      "summary": "In the absence of a contract or local law to the contrary, a lease of immovable property for agricultural or manufacturing purposes is deemed to be from year to year, terminable by six months' notice; and a lease for any other purpose is deemed to be from month to month, terminable by fifteen days' notice expiring with the end of a month of tenancy.",
+      "keywords": ["notice period for eviction", "15 days notice", "month to month lease", "termination notice expiry", "valid notice to quit"]
+    },
+    {
+      "section": "Section 108(b)",
+      "title": "Rights and Liabilities of Lessor and Lessee",
+      "summary": "The lessor is bound to disclose material defects in the property. The lessor shall be deemed to contract that if the lessee pays the rent and performs the contract, the lessee may hold the property during the time without interruption (quiet enjoyment).",
+      "keywords": ["quiet enjoyment", "undisturbed possession", "lessor obligations", "lessee rights", "landlord harassment"]
+    },
+    {
+      "section": "Section 111",
+      "title": "Determination of Lease (How Leases End)",
+      "summary": "A lease of immovable property determines by lapse of time, by the happening of an event specified in the agreement, by express or implied surrender, or by forfeiture for breach of an express condition.",
+      "keywords": ["termination of lease", "expiry of lease", "forfeiture for breach", "surrender of lease"]
+    }
+  ]
+}

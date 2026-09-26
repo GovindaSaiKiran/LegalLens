@@ -1,0 +1,39 @@
+{
+  "jurisdiction": "india",
+  "category": "contracts",
+  "act_title": "Indian Contract Act, 1872 (Act No. 9 of 1872)",
+  "authority": "Parliament of India / Ministry of Law and Justice",
+  "enacted_year": 1872,
+  "sources": [
+    {
+      "section": "Section 10",
+      "title": "What Agreements are Contracts",
+      "summary": "All agreements are contracts if they are made by the free consent of parties competent to contract, for a lawful consideration and with a lawful object, and are not hereby expressly declared to be void.",
+      "keywords": ["contract validity", "free consent", "competence", "lawful consideration", "enforceability"]
+    },
+    {
+      "section": "Section 23",
+      "title": "What Considerations and Objects are Lawful",
+      "summary": "The consideration or object of an agreement is lawful, unless it is forbidden by law, or is of such nature that, if permitted, it would defeat the provisions of any law, or is fraudulent, or involves injury to person or property, or is regarded as immoral or opposed to public policy.",
+      "keywords": ["unlawful object", "opposed to public policy", "illegal clause", "unenforceable terms"]
+    },
+    {
+      "section": "Section 27",
+      "title": "Agreement in Restraint of Trade Void",
+      "summary": "Every agreement by which anyone is restrained from exercising a lawful profession, trade or business of any kind, is to that extent void, subject to standard exceptions regarding the sale of goodwill.",
+      "keywords": ["non-compete clause", "restraint of trade", "post-employment restriction", "void non-compete", "freedom of trade"]
+    },
+    {
+      "section": "Section 28",
+      "title": "Agreements in Restraint of Legal Proceedings Void",
+      "summary": "Every agreement by which any party thereto is restricted absolutely from enforcing his rights under or in respect of any contract by the usual legal proceedings in ordinary tribunals, or which limits the time within which he may enforce his rights, is void to that extent.",
+      "keywords": ["restraint of legal proceedings", "limitation clause", "ouster of court jurisdiction", "arbitration clause validity"]
+    },
+    {
+      "section": "Section 73 & Section 74",
+      "title": "Compensation for Loss or Damage Caused by Breach / Penalty Clauses",
+      "summary": "Section 73 provides compensation for loss or damage caused by breach of contract that naturally arose in the usual course of things. Section 74 stipulates that when a contract contains a penalty or liquidated damages clause, the court awards only reasonable compensation not exceeding the amount named, regardless of actual loss proved.",
+      "keywords": ["liquidated damages", "penalty clause", "breach of contract compensation", "unreasonable penalty", "damages recovery"]
+    }
+  ]
+}

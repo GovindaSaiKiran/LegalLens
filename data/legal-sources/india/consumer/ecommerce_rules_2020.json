@@ -1,0 +1,33 @@
+{
+  "jurisdiction": "india",
+  "category": "consumer",
+  "act_title": "Consumer Protection (E-Commerce) Rules, 2020",
+  "authority": "Central Consumer Protection Authority (CCPA) / Ministry of Consumer Affairs",
+  "enacted_year": 2020,
+  "sources": [
+    {
+      "section": "Rule 4(2)",
+      "title": "Nodal Officer and Grievance Redressal",
+      "summary": "Every e-commerce entity must establish an adequate grievance redressal mechanism and appoint a Grievance Officer, acknowledging receipt of consumer complaints within 48 hours and redressing them within one month.",
+      "keywords": ["grievance officer", "complaint redressal", "48 hours acknowledgment", "one month resolution", "e-commerce support"]
+    },
+    {
+      "section": "Rule 5(3)",
+      "title": "Price and Refund Transparency",
+      "summary": "Marketplace e-commerce platforms must display total price including break-up of charges, mandatory ticket size, postage/delivery fees, refund policies, and terms of cancellation without ambiguous or hidden charges.",
+      "keywords": ["refund policy", "cancellation charges", "hidden fees", "drip pricing", "price breakdown", "return timeline"]
+    },
+    {
+      "section": "Rule 6",
+      "title": "Duties of Sellers on Marketplaces",
+      "summary": "No seller shall refuse to take back goods, or refuse to refund consideration paid for defective, deficient, or spurious goods, or if the goods delivered do not correspond with the description advertised.",
+      "keywords": ["seller refund", "defective goods return", "spurious products", "wrong product delivered", "misleading description"]
+    },
+    {
+      "section": "Rule 7",
+      "title": "Prohibition of Unfair Trade Practices in E-Commerce",
+      "summary": "Entities shall not manipulate the price of goods or services to gain unreasonable profit or indulge in discriminatory pricing. Cancellation charges must not be disproportionate compared to costs incurred.",
+      "keywords": ["excessive cancellation fee", "price manipulation", "dark patterns", "forced consent"]
+    }
+  ]
+}

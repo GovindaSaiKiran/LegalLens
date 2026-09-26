@@ -1,0 +1,35 @@
+CLOUDSCALE PRO TERMS OF SERVICE
+Last Updated: January 15, 2026
+Version 2.4
+
+IMPORTANT NOTICE: PLEASE READ THESE TERMS OF SERVICE CAREFULLY. BY CLICKING "I AGREE", ACCESSING, OR USING CLOUDSCALE PRO ("THE SERVICE"), YOU AGREE TO BE BOUND BY ALL TERMS AND CONDITIONS HEREIN.
+
+1. ACCEPTANCE OF TERMS
+These Terms of Service ("Terms") constitute a legally binding agreement between you ("User", "you") and CloudScale Technologies Private Limited ("Company", "we", "us"). If you are entering into these Terms on behalf of an entity, you represent that you possess legal authority to bind such entity.
+
+2. SUBSCRIPTION BILLING AND AUTOMATIC RENEWAL
+The Service is provided on a recurring subscription basis (monthly or annual). By subscribing, you expressly authorize Company to automatically charge your designated payment method at the beginning of each billing cycle without additional notice, unless and until you cancel your subscription at least 7 calendar days prior to the end of the current billing cycle. Failure to cancel within this window constitutes authorization for the subsequent cycle charge.
+
+3. FEES, PAYMENT, AND REFUND POLICY
+All fees are quoted in USD or INR equivalent and are exclusive of applicable taxes (including GST). All subscription fees paid are strictly NON-REFUNDABLE, including in cases of partial-month usage, account downgrades, or service dissatisfaction. Chargebacks initiated through banks or payment processors without prior written notice to Company may result in immediate account termination and assessment of an administrative fee of $100.
+
+4. USER DATA COLLECTION AND THIRD-PARTY SHARING
+You acknowledge and agree that Company may collect, store, and process telemetry data, usage metrics, IP addresses, browser fingerprinting, and account details. Furthermore, you grant Company the right to share aggregated and pseudonymized data with affiliated partners, marketing networks, infrastructure vendors, and analytics providers across international jurisdictions, including cloud servers located in the United States and the European Union.
+
+5. INTELLECTUAL PROPERTY AND USER CONTENT
+You retain ownership of any data, text, or files you upload ("User Content"). However, you hereby grant Company a worldwide, royalty-free, perpetual, irrevocable, sublicensable license to use, host, store, scan, analyze, and process User Content solely for the purposes of operating, improving, training machine learning models, and providing the Service.
+
+6. ACCOUNT SUSPENSION AND TERMINATION
+Company reserves the right to unilaterally suspend, restrict, or terminate your access to the Service at any time, with or without cause, and without prior notice or liability. Upon termination, all licenses granted to you shall immediately cease, and Company may permanently delete all stored data within 30 days of termination without further obligation to export or return your data.
+
+7. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL COMPANY, ITS DIRECTORS, EMPLOYEES, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS, DATA LOSS, OR SYSTEM DOWNTIME. IN ALL CIRCUMSTANCES, COMPANY'S MAXIMUM AGGREGATE LIABILITY ARISING FROM OR RELATING TO THESE TERMS SHALL NOT EXCEED THE TOTAL AMOUNT ACTUALLY PAID BY YOU TO COMPANY IN THE THREE (3) MONTHS PRECEDING THE CLAIM.
+
+8. MANDATORY ARBITRATION AND WAIVER OF CLASS ACTIONS
+Any dispute, controversy, or claim arising out of or relating to these Terms shall be settled by binding arbitration in accordance with the Arbitration and Conciliation Act, 1996. The seat and venue of arbitration shall be Hyderabad, Telangana, India. The arbitration shall be conducted by a sole arbitrator appointed exclusively by Company. You expressly waive any right to participate in a class action lawsuit or class-wide arbitration.
+
+9. GOVERNING LAW AND JURISDICTION
+These Terms shall be governed by and construed in accordance with the substantive laws of India, without regard to conflict of law principles. Subject to the arbitration clause, the courts at Hyderabad, Telangana shall have exclusive jurisdiction.
+
+10. MODIFICATIONS TO TERMS
+Company reserves the right to modify these Terms at any time by posting the updated version on our website. Your continued use of the Service following such modification constitutes your deemed acceptance of the revised Terms. If you do not agree to the modifications, your sole remedy is to discontinue use of the Service.

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LegalLens Companion</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <div class="logo-box">⚖️</div>
+      <div>
+        <h3>LegalLens</h3>
+        <p>Before You Agree</p>
+      </div>
+    </div>
+
+    <div class="popup-body">
+      <div class="status-card">
+        <span class="status-dot"></span>
+        <span id="page-status">Scanning active tab for legal terms...</span>
+      </div>
+
+      <div class="action-section">
+        <button id="analyze-tab-btn" class="btn primary">
+          Analyze Current Page in LegalLens
+        </button>
+        <button id="open-app-btn" class="btn secondary">
+          Open LegalLens Dashboard
+        </button>
+      </div>
+
+      <div class="checklist-preview">
+        <h4>Provisions Analyzed</h4>
+        <ul>
+          <li>✓ Data usage & third-party sharing</li>
+          <li>✓ Automatic billing renewals</li>
+          <li>✓ Cancellation & refund policies</li>
+          <li>✓ Mandatory arbitration clauses</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="popup-footer">
+      <p>Legal awareness assistance • Not legal advice</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

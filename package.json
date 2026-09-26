@@ -1,0 +1,13 @@
+{
+  "name": "legallens-platform",
+  "version": "1.0.0",
+  "description": "LegalLens - GenAI Legal Awareness Platform",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev:frontend",
+    "start": "node backend/src/server.js",
+    "dev:backend": "node --watch --watch-path=backend/src backend/src/server.js",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend"
+  }
+}

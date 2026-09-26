@@ -1,0 +1,29 @@
+EMPLOYMENT AGREEMENT (SENIOR SOFTWARE ENGINEER) - REVISED COUNTER-OFFER
+This Employment Agreement ("Agreement") is entered into as of January 12, 2026, by and between:
+
+NEXASTACK TECHNOLOGIES INDIA PRIVATE LIMITED, a company incorporated under the Companies Act, 2013, with registered office at Hitec City, Hyderabad - 500081 ("Employer" or "Company");
+
+AND
+
+Mr. Vikram Malhotra, residing at Kondapur, Hyderabad - 500084 ("Employee").
+
+1. APPOINTMENT AND PROBATION
+Company hereby employs Employee as Senior Software Engineer (Backend). Employee shall serve a probation period of three (3) months from the Date of Joining. During probation, either party may terminate the employment with seven (7) days' written notice.
+
+2. REMUNERATION AND BENEFITS
+Company shall pay Employee a Total Fixed Cost to Company (CTC) of INR 26,00,000/- per annum plus a performance bonus of up to 10%, subject to statutory deductions (PF, Professional Tax, TDS). Employee is eligible for 20 days of Privilege Leave and 12 days of Casual/Sick Leave annually.
+
+3. NOTICE PERIOD AND SEPARATION
+Following confirmation, either party may terminate the employment by serving thirty (30) calendar days' prior written notice or payment of gross salary in lieu thereof, mutually exercisable by either party. Employee must complete an orderly handover of assigned code modules within this 30-day window.
+
+4. INTELLECTUAL PROPERTY ASSIGNMENT
+All inventions, source code, designs, and documentation developed by Employee specifically for Company projects during working hours or utilizing Company equipment shall be the property of Company. Any personal open-source projects or inventions developed by Employee entirely on personal time without using Company assets or confidential information shall remain Employee's sole intellectual property.
+
+5. NON-SOLICITATION OF CLIENTS
+For a period of twelve (12) months after termination, Employee covenants not to directly solicit active clients with whom Employee worked during the last six months of tenure. Note: Post-employment general non-compete restrictions have been excluded in compliance with Section 27 of the Indian Contract Act, 1872.
+
+6. CONFIDENTIALITY AND TRADE SECRETS
+Employee agrees to maintain the confidentiality of proprietary trade secrets, customer records, and internal credentials during and for three (3) years following cessation of employment.
+
+7. DISPUTE RESOLUTION AND GOVERNING LAW
+This Agreement shall be governed by the laws of India. Any unresolved dispute shall be subject to the jurisdiction of the civil courts in Hyderabad, Telangana.

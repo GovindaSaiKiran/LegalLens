@@ -1,0 +1,35 @@
+CLOUDSCALE PRO TERMS OF SERVICE
+Last Updated: March 1, 2026
+Version 3.0 (Revised)
+
+IMPORTANT NOTICE: PLEASE READ THESE TERMS OF SERVICE CAREFULLY. BY CLICKING "I AGREE", ACCESSING, OR USING CLOUDSCALE PRO ("THE SERVICE"), YOU AGREE TO BE BOUND BY ALL TERMS AND CONDITIONS HEREIN.
+
+1. ACCEPTANCE OF TERMS
+These Terms of Service ("Terms") constitute a legally binding agreement between you ("User", "you") and CloudScale Technologies Private Limited ("Company", "we", "us"). If you are entering into these Terms on behalf of an entity, you represent that you possess legal authority to bind such entity.
+
+2. SUBSCRIPTION BILLING AND AUTOMATIC RENEWAL
+The Service is provided on a recurring subscription basis (monthly or annual). By subscribing, you expressly authorize Company to automatically charge your designated payment method at the beginning of each billing cycle. You may cancel your subscription at any time up to 24 hours prior to the renewal date via the self-service billing portal without penalty.
+
+3. FEES, PAYMENT, AND REFUND POLICY
+All fees are quoted in USD or INR equivalent and are exclusive of applicable taxes (including GST). We provide a 14-day pro-rated refund guarantee for all annual subscription plans if cancellation is requested within 14 days of billing. Monthly subscriptions remain non-refundable after the 48-hour grace period following initial activation.
+
+4. USER DATA COLLECTION AND THIRD-PARTY SHARING
+Company collects telemetry data, usage metrics, and IP addresses solely for platform performance and security monitoring. Company shall NOT share, sell, or license user-uploaded files or identifiable personal data to external third-party advertising networks. Cloud processing takes place on certified data centers compliant with the Digital Personal Data Protection Act, 2023.
+
+5. INTELLECTUAL PROPERTY AND USER CONTENT
+You retain 100% full ownership of any data, text, or files you upload ("User Content"). You grant Company only a limited, revocable license strictly necessary to store and transmit your files to render the Service. Company explicitly covenants that it shall NOT use customer proprietary data or content to train public machine learning models without express opt-in consent.
+
+6. ACCOUNT SUSPENSION AND TERMINATION
+Company may suspend or terminate your access only upon material breach of these Terms, giving you at least fifteen (15) days written notice to cure such breach. Users have a 30-day data extraction window following termination during which they may export all customer records in JSON/CSV format.
+
+7. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR INDIRECT, SPECIAL, OR CONSEQUENTIAL DAMAGES. COMPANY'S MAXIMUM AGGREGATE LIABILITY ARISING UNDER THESE TERMS SHALL BE CAPPED AT THE GREATER OF $500 OR THE TOTAL AMOUNTS PAID BY YOU IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.
+
+8. DISPUTE RESOLUTION AND MUTUAL ARBITRATION
+Any dispute arising under these Terms shall be resolved first through 30 days of informal good-faith negotiation. If unresolved, disputes shall be referred to arbitration in Hyderabad, India, administered by a mutually agreed arbitrator appointed through the Indian Council of Arbitration.
+
+9. GOVERNING LAW AND JURISDICTION
+These Terms shall be governed by the laws of India. Courts in Hyderabad, Telangana shall have exclusive territorial jurisdiction over matters arising under these Terms.
+
+10. MODIFICATIONS TO TERMS
+Company will provide at least 30 days advance notice via email before any material changes to these Terms take effect. Continued use after the 30-day notice period constitutes acceptance.

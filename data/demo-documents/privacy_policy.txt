@@ -1,0 +1,40 @@
+PULSEHEALTH MOBILE APPLICATION PRIVACY POLICY
+Effective Date: February 10, 2026
+
+At PulseHealth Innovations Pvt. Ltd. ("PulseHealth", "we", "our", or "us"), we value your privacy and are committed to protecting the sensitive personal data of our users ("User", "you"). This Privacy Policy explains our practices regarding the collection, storage, and processing of your health and demographic metrics.
+
+1. INFORMATION WE COLLECT
+When you create an account or link your wearable devices, we collect:
+- Account Identifiers: Name, email address, phone number, date of birth, biological sex.
+- Health & Biometric Data: Daily step count, heart rate variability, sleep cycle recordings, blood pressure logs, dietary entries, and optional medical diagnostic reports.
+- Device & Location Data: Precise GPS coordinates (when background location permission is granted), IP address, device hardware model, operating system version, and Bluetooth beacon signals.
+
+2. PURPOSES OF PROCESSING
+We process your personal information for the following purposes:
+- Providing automated health trend analytics and personalized wellness reminders;
+- Fraud prevention, account security, and compliance with statutory recordkeeping;
+- De-identifying and aggregating health metrics to train predictive AI wellness algorithms;
+- Delivering targeted wellness product recommendations and sponsored sponsor challenges.
+
+3. DATA SHARING WITH THIRD PARTIES
+We do not sell raw personal identifying information to data brokers. However, we may share information with:
+- Cloud Infrastructure Providers: Cloud hosting, database management, and SMS gateway partners located in India, Singapore, and Ireland;
+- Corporate Wellness Partners: If you registered through an employer-sponsored health program, high-level fitness milestones (excluding medical diagnoses) may be reported to your employer;
+- Medical Research Collaborators: Anonymized datasets may be shared with academic universities studying cardiovascular patterns;
+- Legal Authorities: Where compelled by valid subpoena, search warrant, or court order under the Information Technology Act, 2000.
+
+4. USER RIGHTS UNDER DPDP ACT 2023
+In accordance with the Digital Personal Data Protection Act, 2023:
+- Right to Access & Correction: You may request a downloadable copy of your health records through the in-app settings;
+- Right to Withdraw Consent: You can revoke consent for non-essential data collection;
+- Right to Erasure: You may submit a request to delete your account. We will permanently delete or anonymize your health records within 30 days, except records required by tax or medical regulations.
+
+5. DATA RETENTION & SECURITY SAFEGUARDS
+We employ AES-256 bit encryption at rest and TLS 1.3 encryption in transit. Personal health data is retained as long as your account remains active. If your account is dormant for over 24 consecutive months, we will send an email notice before initiating automated archival.
+
+6. GRIEVANCE REDRESSAL OFFICER
+For inquiries, complaints, or rights requests:
+Grievance Officer: Mr. Rajesh Varma
+Email: grievance@pulsehealth.demo.in
+Address: Cyber Towers, Hitec City, Hyderabad - 500081, Telangana, India.
+Response Timeline: Acknowledgment within 48 hours; resolution within 30 calendar days.

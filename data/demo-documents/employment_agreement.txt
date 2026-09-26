@@ -1,0 +1,32 @@
+EMPLOYMENT AGREEMENT (SENIOR SOFTWARE ENGINEER)
+This Employment Agreement ("Agreement") is entered into as of January 10, 2026, by and between:
+
+NEXASTACK TECHNOLOGIES INDIA PRIVATE LIMITED, a company incorporated under the Companies Act, 2013, with registered office at Hitec City, Hyderabad - 500081 ("Employer" or "Company");
+
+AND
+
+Mr. Vikram Malhotra, residing at Kondapur, Hyderabad - 500084 ("Employee").
+
+1. APPOINTMENT AND PROBATION
+Company hereby employs Employee as Senior Software Engineer (Backend). Employee shall serve a probation period of six (6) months from the Date of Joining. During probation, either party may terminate the employment with fifteen (15) days' written notice. Upon successful completion of probation, confirmation shall be communicated in writing.
+
+2. REMUNERATION AND BENEFITS
+Company shall pay Employee a Total Fixed Cost to Company (CTC) of INR 24,00,000/- per annum, subject to statutory deductions (PF, Professional Tax, TDS). Employee is eligible for 18 days of Privilege Leave and 12 days of Casual/Sick Leave annually.
+
+3. NOTICE PERIOD AND SEPARATION
+Following confirmation, either party may terminate the employment by serving ninety (90) calendar days' prior written notice or payment of gross salary in lieu thereof, subject to Company's sole discretion to accept salary in lieu of notice. Employee must complete an orderly handover of all ongoing source code repositories, architectural documentation, and credentials.
+
+4. INTELLECTUAL PROPERTY ASSIGNMENT
+All inventions, source code, designs, algorithms, patents, trademarks, and documentation conceived, developed, or reduced to practice by Employee during the term of employment, whether during office hours or using Company assets, shall be the sole and exclusive property of Company as a "work made for hire". Employee waives all moral rights to the fullest extent permitted under Section 57 of the Copyright Act, 1957.
+
+5. NON-COMPETE AND POST-TERMINATION RESTRICTION
+During employment and for a period of twelve (12) months following the cessation of employment for any reason, Employee shall not directly or indirectly accept employment with, consult for, or establish any business or entity in India that competes with the software products developed by Company.
+
+6. NON-SOLICITATION OF CLIENTS AND EMPLOYEES
+For a period of twenty-four (24) months after termination, Employee covenants not to induce, solicit, or attempt to recruit any existing employee, consultant, client, or vendor of Company.
+
+7. CONFIDENTIALITY AND TRADE SECRETS
+Employee acknowledges that during employment, Employee will have access to proprietary trade secrets, customer lists, and source code. Employee agrees to maintain strict confidentiality perpetually, even after termination of employment.
+
+8. DISPUTE RESOLUTION AND GOVERNING LAW
+This Agreement shall be governed by the laws of India. Any dispute arising out of this Agreement shall be settled by arbitration in Hyderabad in accordance with the Arbitration and Conciliation Act, 1996.

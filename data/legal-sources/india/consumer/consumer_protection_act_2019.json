@@ -1,0 +1,39 @@
+{
+  "jurisdiction": "india",
+  "category": "consumer",
+  "act_title": "Consumer Protection Act, 2019 (Act No. 35 of 2019)",
+  "authority": "Parliament of India / Ministry of Consumer Affairs, Food and Public Distribution",
+  "enacted_year": 2019,
+  "sources": [
+    {
+      "section": "Section 2(7)",
+      "title": "Definition of Consumer",
+      "summary": "Defines a consumer as any person who buys goods or hires services for consideration, including offline or online transactions, electronic means, teleshopping, direct selling, or multi-level marketing, excluding goods bought for commercial purposes.",
+      "keywords": ["consumer definition", "buyer", "service recipient", "e-commerce buyer", "commercial purpose"]
+    },
+    {
+      "section": "Section 2(46)",
+      "title": "Unfair Contract",
+      "summary": "Defines an unfair contract between a manufacturer or trader or service provider on one hand, and a consumer on the other, having terms which cause significant change in consumer rights, such as requiring excessive security deposits, imposing disproportionate penalty, refusing early payment, unilateral termination without reasonable cause, or assigning contract to detriment of consumer without consent.",
+      "keywords": ["unfair contract", "one-sided terms", "excessive deposit", "disproportionate penalty", "unilateral termination", "arbitrary cancellation"]
+    },
+    {
+      "section": "Section 2(47)",
+      "title": "Unfair Trade Practice",
+      "summary": "Prohibits deceptive trade practices including false representations regarding standard, quality, or grade, misleading warranties or guarantees, non-issuance of tax invoice/cash memo, and refusing to take back defective goods or refund consideration paid within specified time.",
+      "keywords": ["unfair trade practice", "misleading advertisement", "refusal of refund", "defective goods", "non-issuance of bill", "warranty breach"]
+    },
+    {
+      "section": "Section 34, 47, 58",
+      "title": "Jurisdiction of Consumer Disputes Redressal Commissions",
+      "summary": "Establishes a three-tier quasi-judicial redressal mechanism: District Commission (claims up to INR 50 Lakhs), State Commission (claims exceeding INR 50 Lakhs up to INR 2 Crores), and National Commission (claims exceeding INR 2 Crores). Consumers can file complaints where they reside or work (e-Daakhil portal).",
+      "keywords": ["consumer forum", "district commission", "state commission", "e-daakhil", "jurisdiction limit", "pecuniary limit", "complaint filing"]
+    },
+    {
+      "section": "Section 82-87",
+      "title": "Product Liability",
+      "summary": "A product manufacturer, product service provider, or product seller is liable to compensate a consumer for any harm caused by a defective product or deficiency in services.",
+      "keywords": ["product liability", "defective product", "deficiency in service", "compensation", "harm caused"]
+    }
+  ]
+}

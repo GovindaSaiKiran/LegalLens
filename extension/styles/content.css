@@ -1,0 +1,138 @@
+/* LegalLens Injected Extension Styles */
+
+.legallens-badge-container {
+  display: inline-block;
+  margin-left: 8px;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  vertical-align: middle;
+  z-index: 999999;
+}
+
+.legallens-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.legallens-pill:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.legallens-icon {
+  font-size: 12px;
+}
+
+.legallens-overlay-popup {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  width: 340px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+  padding: 14px;
+  z-index: 1000000;
+  text-align: left;
+  line-height: 1.4;
+  color: #1e293b;
+}
+
+.legallens-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.legallens-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.legallens-logo {
+  font-size: 13px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.legallens-subtitle {
+  font-size: 10px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.legallens-close-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #94a3b8;
+  padding: 2px 6px;
+}
+
+.legallens-close-btn:hover {
+  color: #0f172a;
+}
+
+.legallens-intro {
+  font-size: 11px;
+  font-weight: 600;
+  color: #475569;
+  margin: 0 0 8px 0;
+}
+
+.legallens-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 11px;
+}
+
+.legallens-list li {
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+.legallens-list strong {
+  color: #0f172a;
+}
+
+.legallens-footer {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.legallens-safety-note {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.legallens-app-link {
+  font-size: 11px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.legallens-app-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,33 @@
+{
+  "jurisdiction": "india",
+  "category": "rental",
+  "act_title": "Model Tenancy Act, 2021 & State Tenancy Provisions (e.g. Telangana / Karnataka)",
+  "authority": "Ministry of Housing and Urban Affairs / State Urban Development Departments",
+  "enacted_year": 2021,
+  "sources": [
+    {
+      "section": "Section 11",
+      "title": "Security Deposit Limits and Refund Timeline",
+      "summary": "Security deposit for residential premises shall not exceed two months' rent, and for non-residential premises shall not exceed six months' rent. Deposit must be refunded to the tenant upon handing over vacant possession of the premises, after making legitimate deductions for any arrears of rent or damages.",
+      "keywords": ["security deposit refund", "two months rent cap", "deposit deduction", "vacant possession refund", "landlord withholding deposit"]
+    },
+    {
+      "section": "Section 4 & Section 8",
+      "title": "Written Tenancy Agreement & Rent Revision",
+      "summary": "No person shall let or take on rent any premises except by an agreement in writing. Revision of rent must be in accordance with terms of the tenancy agreement, requiring at least three months' prior written notice to tenant before revision takes effect.",
+      "keywords": ["written tenancy agreement", "rent increase notice", "three months notice for rent revision", "unilateral rent hike"]
+    },
+    {
+      "section": "Section 15",
+      "title": "Maintenance and Repair Responsibilities",
+      "summary": "Both landlord and tenant are bound to keep premises in good condition according to division of responsibilities. If landlord fails to carry out necessary structural repairs after notice, tenant can carry out repairs and deduct expenses from rent (up to 50% of monthly rent) or approach the Rent Authority.",
+      "keywords": ["maintenance obligation", "structural repairs", "deduct repair cost from rent", "unlivable condition"]
+    },
+    {
+      "section": "Section 20 & 21",
+      "title": "Restriction on Eviction and Entry",
+      "summary": "No landlord shall cut off or withhold any essential supply or service (water, electricity, access). Eviction can only be sought through application before the Rent Court on specified statutory grounds such as persistent rent default or misuse.",
+      "keywords": ["illegal eviction", "disconnection of electricity", "disconnection of water", "unlawful lock-out", "rent authority petition"]
+    }
+  ]
+}

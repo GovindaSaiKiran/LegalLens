@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+!.env.test.example
+backend/.env
+frontend/.env
+*.env
+
+# Build & Output
+dist/
+build/
+*/dist/
+*/build/
+coverage/
+
+# SQLite Database & Uploads
+*.sqlite
+*.sqlite3
+*.db
+backend/legallens.sqlite
+backend/uploads/
+uploads/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

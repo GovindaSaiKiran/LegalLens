@@ -1,0 +1,27 @@
+{
+  "jurisdiction": "india",
+  "category": "employment",
+  "act_title": "Shops and Commercial Establishments Acts (State Enactments, e.g., Telangana / Karnataka / Maharashtra)",
+  "authority": "State Labour Departments",
+  "enacted_year": 1988,
+  "sources": [
+    {
+      "section": "Section 47 (Telangana) / Equivalent State Provisions",
+      "title": "Notice of Termination of Service / Severance Pay",
+      "summary": "An employer cannot terminate an employee who has been in continuous employment for at least six months without giving at least one month's notice in writing or wages in lieu thereof, except in cases of proven misconduct. Gratuity and unpaid leaves must be settled.",
+      "keywords": ["termination notice", "one month notice", "wages in lieu of notice", "unlawful firing", "severance pay", "retrenchment"]
+    },
+    {
+      "section": "Working Hours & Overtime Sections",
+      "title": "Daily/Weekly Hours and Overtime Wages",
+      "summary": "Normal working hours generally cannot exceed 8 to 9 hours a day or 48 hours a week. Any work performed beyond prescribed hours must be compensated at double the ordinary rate of wages (2x overtime).",
+      "keywords": ["overtime wages", "48 hour work week", "daily working hours", "double rate overtime"]
+    },
+    {
+      "section": "Leave Entitlements",
+      "title": "Earned Leave, Casual Leave, and Sick Leave",
+      "summary": "Employees are entitled to statutory annual earned/privilege leaves (usually 15 days), casual leaves (up to 12 days), and sick leaves, with statutory provisions for encashment upon resignation or termination.",
+      "keywords": ["earned leave", "leave encashment", "paid leave", "sick leave", "statutory holidays"]
+    }
+  ]
+}

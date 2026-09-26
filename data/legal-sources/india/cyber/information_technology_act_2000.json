@@ -1,0 +1,33 @@
+{
+  "jurisdiction": "india",
+  "category": "cyber",
+  "act_title": "Information Technology Act, 2000 (Act No. 21 of 2000)",
+  "authority": "Ministry of Electronics and Information Technology (MeitY)",
+  "enacted_year": 2000,
+  "sources": [
+    {
+      "section": "Section 43A",
+      "title": "Compensation for Failure to Protect Sensitive Personal Data",
+      "summary": "Where a body corporate possessing, dealing or handling sensitive personal data or information in a computer resource is negligent in implementing and maintaining reasonable security practices resulting in wrongful loss or gain, it is liable to pay damages by way of compensation to affected persons.",
+      "keywords": ["reasonable security practices", "sensitive personal data breach", "wrongful loss compensation", "SPDI rules"]
+    },
+    {
+      "section": "Section 66C & 66D",
+      "title": "Identity Theft and Cheating by Personation",
+      "summary": "Section 66C penalizes fraudulent or dishonest use of electronic signature, password, or other unique identification feature. Section 66D penalizes cheating by personation by using any computer resource, punishable with imprisonment up to 3 years and fine.",
+      "keywords": ["identity theft", "cyber fraud", "phishing", "online impersonation", "credential compromise"]
+    },
+    {
+      "section": "Section 72A",
+      "title": "Punishment for Disclosure of Information in Breach of Lawful Contract",
+      "summary": "Any person who has secured access to any material containing personal information while providing services under terms of a lawful contract, and discloses such material without consent of the person or in breach of contract, is liable to imprisonment up to 3 years or fine up to INR 5 Lakhs.",
+      "keywords": ["unauthorized disclosure", "breach of lawful contract", "privacy breach", "unauthorized data leak"]
+    },
+    {
+      "section": "Section 79",
+      "title": "Exemption from Liability of Intermediary in Certain Cases (Safe Harbor)",
+      "summary": "Intermediaries are exempt from liability for third-party information or communication links made available by them if they act merely as conduits and observe due diligence while discharging duties under the IT Rules.",
+      "keywords": ["intermediary safe harbor", "due diligence", "third party content", "takedown notice"]
+    }
+  ]
+}

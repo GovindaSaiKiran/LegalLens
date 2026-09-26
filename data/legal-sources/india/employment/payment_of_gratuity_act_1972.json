@@ -1,0 +1,27 @@
+{
+  "jurisdiction": "india",
+  "category": "employment",
+  "act_title": "Payment of Gratuity Act, 1972 (Act No. 39 of 1972)",
+  "authority": "Ministry of Labour and Employment, Government of India",
+  "enacted_year": 1972,
+  "sources": [
+    {
+      "section": "Section 4",
+      "title": "Payment of Gratuity and 5-Year Continuous Service Rule",
+      "summary": "Gratuity is payable to an employee on the termination of employment after rendering continuous service for not less than five years, upon superannuation, retirement/resignation, or death/disablement (where 5-year condition does not apply). Calculated as 15 days wages per year of service.",
+      "keywords": ["gratuity", "5 years continuous service", "gratuity calculation", "15 days wages per year", "resignation gratuity"]
+    },
+    {
+      "section": "Section 7(3A)",
+      "title": "Interest on Delayed Gratuity Payment",
+      "summary": "If the amount of gratuity is not paid by the employer within 30 days from the date it becomes payable, the employer is liable to pay simple interest at prevailing bank rates.",
+      "keywords": ["delayed gratuity", "30 days gratuity timeline", "gratuity interest", "controlling authority"]
+    },
+    {
+      "section": "Section 14",
+      "title": "Act to Override Other Enactments and Contracts",
+      "summary": "The provisions of the Gratuity Act or any rule made thereunder shall have effect notwithstanding anything inconsistent therewith contained in any enactment or in any instrument or contract.",
+      "keywords": ["gratuity override contract", "mandatory statutory gratuity", "cannot contract out of gratuity"]
+    }
+  ]
+}

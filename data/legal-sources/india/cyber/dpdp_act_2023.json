@@ -1,0 +1,33 @@
+{
+  "jurisdiction": "india",
+  "category": "cyber",
+  "act_title": "Digital Personal Data Protection Act, 2023 (Act No. 22 of 2023)",
+  "authority": "Ministry of Electronics and Information Technology (MeitY) / Data Protection Board of India",
+  "enacted_year": 2023,
+  "sources": [
+    {
+      "section": "Section 5 & Section 6",
+      "title": "Notice and Consent Requirements",
+      "summary": "Every request for consent must be accompanied or preceded by a notice giving description of personal data sought and purpose of processing, and how data principals can exercise rights. Consent must be free, specific, informed, unconditional and unambiguous with a clear affirmative action.",
+      "keywords": ["data consent", "notice requirement", "affirmative consent", "purpose limitation", "clear plain language"]
+    },
+    {
+      "section": "Section 6(4)",
+      "title": "Right to Withdraw Consent",
+      "summary": "The Data Principal has the right to withdraw consent at any time, with the ease of doing so comparable to the ease with which such consent was given.",
+      "keywords": ["withdraw consent", "revoke permission", "delete personal data", "opt-out easily"]
+    },
+    {
+      "section": "Section 11, 12, 13",
+      "title": "Rights of the Data Principal",
+      "summary": "Data Principals have the right to obtain a summary of personal data being processed, identity of entities data was shared with, right to correction, completion, updating, and erasure of personal data, and grievance redressal.",
+      "keywords": ["right to erasure", "data access request", "correction of personal data", "grievance redressal"]
+    },
+    {
+      "section": "Section 33",
+      "title": "Penalties for Breach",
+      "summary": "Imposes significant financial penalties up to INR 250 Crores for failure to take reasonable security safeguards to prevent personal data breach, and up to INR 200 Crores for non-fulfillment of obligations in relation to children.",
+      "keywords": ["data breach penalty", "data protection board", "security safeguards", "unauthorized data leak"]
+    }
+  ]
+}

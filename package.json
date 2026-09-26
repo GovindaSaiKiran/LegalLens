@@ -33,5 +33,11 @@
     "eslint-plugin-react": "^7.34.1",
     "jest": "^29.7.0",
     "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/backend/tests/**/*.test.js"
+    ],
+    "testEnvironment": "node"
   }
 }

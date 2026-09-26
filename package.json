@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "npm run dev:frontend",
-    "start": "node backend/src/server.js",
+    "start": "cd backend && npm start",
     "dev:backend": "node --watch --watch-path=backend/src backend/src/server.js",
     "dev:frontend": "npm run dev --prefix frontend",
     "build:frontend": "cd frontend && npm install && npm run build",

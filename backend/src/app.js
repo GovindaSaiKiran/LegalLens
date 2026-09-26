@@ -1,6 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const compression = require('compression');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+const apicache = require('apicache');
 const errorHandler = require('./middleware/errorHandler');
 
 const authRoutes = require('./routes/auth.routes');
@@ -17,7 +20,17 @@ const voiceRoutes = require('./routes/voice.routes');
 
 const app = express();
 
-// Middleware
+const cache = apicache.middleware;
+
+// Security and Performance Middlewares
+app.use(helmet());
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+  message: 'Too many requests, please try again later.'
+});
+app.use('/api', limiter);
+
 app.use(cors());
 app.use(compression());
 app.use(express.json({ limit: '25mb' }));
@@ -40,7 +53,7 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/api/health', (req, res) => {
+app.get('/api/health', cache('5 minutes'), (req, res) => {
   res.json({
     status: 'healthy',
     service: 'LegalLens API',
